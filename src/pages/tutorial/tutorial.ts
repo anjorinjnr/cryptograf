@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 export interface Slide {
   title: string;
   description: string;
-  image: string;
+  image?: string;
 }
 
 @IonicPage()
@@ -23,8 +23,6 @@ export class TutorialPage {
     this.dir = platform.dir();
     translate.get(["TUTORIAL_SLIDE1_TITLE",
       "TUTORIAL_SLIDE1_DESCRIPTION",
-      "TUTORIAL_SLIDE2_TITLE",
-      "TUTORIAL_SLIDE2_DESCRIPTION",
       "TUTORIAL_SLIDE3_TITLE",
       "TUTORIAL_SLIDE3_DESCRIPTION",
     ]).subscribe(
@@ -34,17 +32,17 @@ export class TutorialPage {
           {
             title: values.TUTORIAL_SLIDE1_TITLE,
             description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1.png',
+            // image: 'assets/img/ica-slidebox-img-1.png',
           },
-          {
-            title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-2.png',
-          },
+          // {
+          //   title: values.TUTORIAL_SLIDE2_TITLE,
+          //   description: values.TUTORIAL_SLIDE2_DESCRIPTION,
+          //   //image: 'assets/img/ica-slidebox-img-2.png',
+          // },
           {
             title: values.TUTORIAL_SLIDE3_TITLE,
             description: values.TUTORIAL_SLIDE3_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-3.png',
+            // image: 'assets/img/ica-slidebox-img-3.png',
           }
         ];
       });

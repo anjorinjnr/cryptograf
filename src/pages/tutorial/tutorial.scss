@@ -4,6 +4,10 @@ page-tutorial {
     border-color: transparent;
   }
 
+  .content {
+    background-color: #3E50B4;
+    color: #fff;
+  }
   .slide-zoom {
     height: 100%;
   }
@@ -18,19 +22,25 @@ page-tutorial {
     margin: 36px 0;
   }
 
-  b {
+  p {
     font-weight: 500;
   }
 
   p {
     padding: 0 40px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #60646B;
+    // color: #60646B;
 
     b {
       color: #000000;
     }
   }
 
+  .header {
+    color: #fff;
+  }
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
 }

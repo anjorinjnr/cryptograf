@@ -1,0 +1,50 @@
+page-create-portfolio {
+    .info {
+        color: #000;
+        margin: 15px 0 15px;
+        padding: 10px;
+    }
+    .up {
+        color: #21CE99;
+    }
+    .down {
+        color: #F45531;
+    }
+    .coin-row {
+        height: 60px;
+        padding-top: 10px;
+    }
+    .coin-list-header {
+        background-color: #F5F5F5;
+        height: 40px;
+    }
+    .coin-list-header ion-col {
+        font-family: WhitneyHTFSemiBold;
+        opacity: 0.3
+    }
+    .coin-list {
+        padding: 0px;
+    }
+    .coin-list ion-row {
+        padding: 5px;
+    }
+    .search-nav-bar {
+        min-height: 100%;
+    }
+    .search-nav-bar,
+    .search-nav-bar .searchbar {
+        padding: 0px;
+    }
+    .search-nav-bar .toolbar-background {
+        background: transparent;
+    }
+    .searchbar {
+        height: 100%;
+    }
+    .searchbar-md .searchbar-search-icon {
+        top: 15px;
+    }
+    .searchbar-md .searchbar-input {
+        height: 50px;
+    }
+}

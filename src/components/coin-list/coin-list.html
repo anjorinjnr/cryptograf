@@ -1,0 +1,9 @@
+<!-- Generated template for the CoinListComponent component -->
+<div class="coin-list">
+    <ion-list>
+        <button ion-item *ngFor="let coin of coins" (click)="itemSelected(item)" detail-push>
+            {{ coin.name }}
+
+        </button>
+    </ion-list>
+</div>

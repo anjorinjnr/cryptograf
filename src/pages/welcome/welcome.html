@@ -1,13 +1,32 @@
 <ion-content scroll="false">
-  <div class="splash-bg"></div>
-  <div class="splash-info">
-    <div class="splash-logo"></div>
-    <div class="splash-intro">
-      {{ 'WELCOME_INTRO' | translate }}
+    <div class="bg-blue">
+        <div padding class="welcome-info">
+            <h2 class="app-title">CRYPTOGRAF</h2>
+
+            <p class="app-intro">Cryptograf is a private social community for export crypto traders, influencers and their followers.</p>
+        </div>
+
+        <div padding class="actions">
+            <button ion-button block color="light" (click)="signupEmail()" class="signup-bttn">
+              Sign up with Email
+            </button>
+
+            <div class="divider">
+                <div class="line" float-left>
+                    <hr>
+                </div>
+                <span>OR</span>
+                <div class="line" float-right>
+                    <hr>
+                </div>
+            </div>
+
+            <button ion-button block color="light" (click)="signUp()" class="signup-bttn"> 
+              Sign up with Twitter
+        </button>
+        </div>
+
+        <p class="login">Already have an account? <a>Login</a> </p>
     </div>
-  </div>
-  <div padding>
-    <button ion-button block (click)="signup()">{{ 'SIGNUP' | translate }}</button>
-    <button ion-button block (click)="login()" class="login">{{ 'LOGIN' | translate }}</button>
-  </div>
+
 </ion-content>

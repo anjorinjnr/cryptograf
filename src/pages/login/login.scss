@@ -1,2 +1,12 @@
 page-login {
+    ion-item {
+        height: 75px;
+    }
+    .bordered {
+        border-bottom: 1px solid #F5F5F5;
+    }
+    .signup a,
+    .forgot-password {
+        text-decoration: none;
+    }
 }

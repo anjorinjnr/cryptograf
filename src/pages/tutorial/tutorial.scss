@@ -1,46 +1,39 @@
 page-tutorial {
-  .toolbar-background {
-    background: transparent;
-    border-color: transparent;
-  }
-
-  .content {
-    background-color: #3E50B4;
-    color: #fff;
-  }
-  .slide-zoom {
-    height: 100%;
-  }
-
-  .slide-title {
-    margin-top: 2.8rem;
-  }
-
-  .slide-image {
-    max-height: 40%;
-    max-width: 60%;
-    margin: 36px 0;
-  }
-
-  p {
-    font-weight: 500;
-  }
-
-  p {
-    padding: 0 40px;
-    font-size: 18px;
-    line-height: 1.5;
-    // color: #60646B;
-
-    b {
-      color: #000000;
+    .toolbar-background {
+        background: transparent;
+        border-color: transparent;
     }
-  }
-
-  .header {
-    color: #fff;
-  }
-  .swiper-pagination-bullet-active {
-    background: #fff;
-  }
+    .content {
+        background-color: #3E50B4;
+        color: #fff;
+    }
+    .slide-zoom {
+        height: 100%;
+    }
+    .slide-title {
+        margin-top: 2.8rem;
+    }
+    .slide-image {
+        max-height: 40%;
+        max-width: 60%;
+        margin: 36px 0;
+    }
+    p {
+        font-weight: 500;
+    }
+    p {
+        padding: 0 40px;
+        font-size: 18px;
+        line-height: 1.5;
+        // color: #60646B;
+        b {
+            color: #000000;
+        }
+    }
+    .header {
+        color: #fff;
+    }
+    .swiper-pagination-bullet-active {
+        background: #fff;
+    }
 }

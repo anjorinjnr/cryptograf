@@ -4,6 +4,7 @@ import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers/providers';
 import { MainPage } from '../pages';
+import _ from 'lodash';
 
 @IonicPage()
 @Component({
@@ -15,8 +16,8 @@ export class LoginPage {
   // If you're using the username field with or without email, make
   // sure to add it to the type
   account: { email: string, password: string } = {
-    email: 'test@example.com',
-    password: 'test'
+    email: '',
+    password: ''
   };
 
   // Our translated text strings
@@ -34,6 +35,12 @@ export class LoginPage {
 
   // Attempt to login in through our User service
   doLogin() {
+    if (_.isEmpty(this.account.email)) {
+      console.log('email is empty');
+      return;
+      
+    }
+    
     this.user.login(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
     }, (err) => {

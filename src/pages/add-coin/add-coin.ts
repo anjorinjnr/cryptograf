@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { IonicPage,  Modal, NavController, NavParams , ModalController} from 'ionic-angular';
+// import { AddMoreCoinModalPage} from '../add-more-coin-modal/add-more-coin-modal';
 /**
  * Generated class for the AddCoinPage page.
  *
@@ -13,13 +13,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-add-coin',
   templateUrl: 'add-coin.html',
 })
-export class AddCoinPage {
+export  class AddCoinPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  addMoreModal: Modal;
+  modalIsActive: boolean;
+  constructor(public modalCtrl: ModalController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddCoinPage');
+    this.showModal();
+  }
+
+  hasModal() {
+
+    return this.addMoreModal && this.addMoreModal.isOverlay;
+  }
+  showModal() {
+    this.modalIsActive =  true;
+    let modal = this.modalCtrl.create('AddMoreCoinModalPage', {}, {cssClass: 'add-more-modal'});
+    modal.present();
   }
 
 }

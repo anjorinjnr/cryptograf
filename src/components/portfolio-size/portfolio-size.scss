@@ -1,0 +1,28 @@
+portfolio-size {
+    h4 {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #000;
+        opacity: 0.4;
+        font-family: 'WhitneyHTFSemiBold';
+    }
+    .total {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .change {
+        font-size: 16px;
+    }
+    .add-coin {
+        padding-top: 4px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .summary {
+        margin-bottom: 2px;
+    }
+}

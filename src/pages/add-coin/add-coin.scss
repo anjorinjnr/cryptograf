@@ -1,3 +1,52 @@
 page-add-coin {
-
+    .blur {
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
+    }
+    .visibility {
+        background-color: #F9F9F9;
+        padding: 10px;
+        position: fixed;
+        top: 50px;
+        z-index: 100;
+        width: 100%;
+        h4 {
+            font-family: WhitneyHTFSemiBold;
+            font-size: 10px;
+            margin: 0px;
+            opacity: 0.2;
+        }
+        ion-grid {
+            padding: 0px;
+        }
+        ion-col {
+            padding-top: 5px;
+        }
+    }
+    .content .scroll-content {
+        margin-top: 33px;
+    }
+    .visiblity-select {
+        max-width: fit-content;
+        float: right;
+        padding: 5px 8px;
+    }
+    .twitter-toggle {
+        float: right;
+        padding: 5px 8px;
+    }
+    .add-coin {
+        margin-top: 120px;
+    }
+    .visibility-option,
+    .select-md .select-placeholder {
+        color: #3E50B4;
+        font-size: 16px;
+    }
+    .visibility-icon {
+        padding-top: 5px;
+    }
 }

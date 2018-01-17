@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Follow Influencers</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="light" class="font-bold">
+          <strong>SKIP</strong>
+        </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="header">
+        Here...
+    </div>
+    <div class="influencers">
+        <ion-list>
+            <ion-item *ngFor="let user of influencers" detail-push (click)="showProfile(user)">
+                <ion-avatar item-start>
+                    <img src="">
+                </ion-avatar>
+
+                <h2>{{ user.firstname }} {{ user.lastname }}</h2>
+                <p>@{{ user.username }}</p>
+
+                <ion-icon [hidden]="isFollowing(user)" (click)="follow(user, $event)" class="add" md="md-add" item-end></ion-icon>
+                <ion-icon [hidden]="!isFollowing(user)" (click)="unfollow(user)" class="added" md="md-checkmark-circle" item-end></ion-icon>
+            </ion-item>
+        </ion-list>
+    </div>
+
+    <ion-footer text-right>
+        <button ion-button>Default</button>
+    </ion-footer>
+</ion-content>

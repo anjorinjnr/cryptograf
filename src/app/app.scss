@@ -13,26 +13,65 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 @import "../../www/assets/fonts/whitney.scss";
+
 .toolbar-background {
-    background: #3E50B4;
+  background: #3E50B4;
 }
 
 .toolbar-title {
-    color: #fff;
+  color: #fff;
 }
 
 .toolbar-md {
-    min-height: 50px;
+  min-height: 50px;
 }
 
 * {
-    font-family: "WhitneyHTF";
+  font-family: "WhitneyHTF";
 }
 
 .font-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .border-bottom {
-    border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.no-border-bottom {
+  border-bottom: none !important;
+}
+
+.divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  .line {
+    width: 40%
+  }
+  .line hr {
+    background-color: #fff;
+  }
+}
+
+.text-bttn {
+  padding-top: 4px;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.no-padding-right {
+  padding-right: 0px;
+}
+
+.up {
+  color: #21CE99;
+}
+
+.down {
+  color: #F45531;
 }

@@ -4,7 +4,8 @@ import { AddCoinPage } from './add-coin';
 
 @NgModule({
   declarations: [
-    AddCoinPage,
+     AddCoinPage,
+    //  AddMoreCoinModalPage
   ],
   imports: [
     IonicPageModule.forChild(AddCoinPage),

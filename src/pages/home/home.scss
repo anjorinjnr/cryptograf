@@ -1,0 +1,27 @@
+page-home {
+  .menu-row {
+    padding: 0px;
+  }
+  .menu-select {
+    max-width: fit-content;
+    padding-left: 0px;
+  }
+  .select-text,
+  .perf-time {
+    font-size: 16px;
+  }
+  .perf-time {
+    margin-top: 10px;
+    color: #000;
+    opacity: .5;
+  }
+  .section {
+    padding: 5px 15px;
+  }
+  .no-padding-top {
+    padding-top: 0px;
+  }
+  hr.no-margin-bottom {
+    margin-bottom: 0px;
+  }
+}

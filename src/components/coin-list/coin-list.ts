@@ -79,15 +79,14 @@ export class CoinListComponent {
       },
       holdSize: 0
     }
-    
+
   ];
 
   constructor() {
     console.log('Hello CoinListComponent Component');
-    this.text = 'Hello World';
   }
 
   itemSelected(){
-    
+
   }
 }

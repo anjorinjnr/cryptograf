@@ -1,0 +1,58 @@
+<!-- Generated template for the CryptoPerformanceComponent component -->
+<div>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-5>
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col col-12>
+              <h4 class="column-title">Top Performers</h4>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngFor="let coin of topPerformers" margin-bottom>
+            <ion-col col-6>
+              <h4 class="coin-symbol" no-margin>{{ coin.symbol }}</h4>
+              <span class="coin-name">{{ coin.name }} </span>
+            </ion-col>
+            <ion-col col-6 text-right class="pad-right">
+              <span>{{ coin.price_usd | currency:USD }}</span> <br>
+              <span [ngClass]="{up: coin.percent_change_24h > 0, down: coin
+              .percent_change_24h < 0}">
+                {{ coin.percent_change_24h }}%</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+      <ion-col col-2>
+        <div class="vertical-divider"></div>
+      </ion-col>
+      <ion-col col-5>
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col col-12>
+              <h4 class="column-title">Worst Performers</h4>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngFor="let coin of worstPerformers" margin-bottom>
+            <ion-col col-6 class="pad-left">
+              <h4 class="coin-symbol" no-margin>{{ coin.symbol }}</h4>
+              <span class="coin-name">{{ coin.name }} </span>
+            </ion-col>
+            <ion-col col-6 text-right>
+              <span>{{ coin.price_usd | currency:USD }}</span> <br>
+              <span [ngClass]="{up: coin.percent_change_24h > 0, down: coin
+              .percent_change_24h < 0}">
+                {{ coin.percent_change_24h }}%</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button block>See More</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
